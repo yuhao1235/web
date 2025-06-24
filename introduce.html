@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>项目简介</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: "Microsoft YaHei", sans-serif;
+      background-color: #f0f0f0;
+      color: #333;
+    }
+
+    .top-label {
+      position: absolute;
+      top: 20px;
+      left: 30px;
+      font-family: 'Noto Serif SC', serif;
+      font-size: 1.8em;
+      color: #555;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 80px 40px 60px;
+      gap: 40px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 300px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #fff;
+      padding: 20px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      border-radius: 10px;
+    }
+
+    .column img {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .column video {
+      width: 100%;
+      margin-top: 20px;
+      border-radius: 8px;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 30px;
+    }
+
+    .footer a {
+      text-decoration: none;
+      color: white;
+      background-color: #007ACC;
+      padding: 12px 24px;
+      border-radius: 6px;
+      font-weight: bold;
+      transition: background-color 0.3s ease;
+    }
+
+    .footer a:hover {
+      background-color: #005fa3;
+    }
+  </style>
+</head>
+<body>
+  <!-- 右上角标题 -->
+  <div class="top-label">简介</div>
+
+  <!-- 主体两栏内容 -->
+  <div class="container">
+    <div class="column">
+      <div>
+        <h2>项目简述</h2>
+        <p>简介
+
+—— 用AI识别情绪，用颂钵疗愈心灵
+在当今社会，越来越多的人面临长期的情绪波动与心理压力，却很少有机会及时觉察、处理和释放这些情绪。本项目正是在这样的背景下诞生：我们希望构建一个能够“理解”用户当前情绪状态，并给予及时回应的声音疗愈系统。
+
+
+ 情绪识别输入：面部图像
+
+</p>
+        <p>我们结合了人工智能情绪识别技术与传统颂钵声音疗愈方法，开发出一个网页端交互平台：用户通过摄像头上传面部图像，系统自动分析其当前情绪（如愤怒、悲伤、紧张等），并播放与之匹配的颂钵声音，以达到平衡情绪、放松身心的目的。
+
+
+ </p>
+ <p> 🧠 技术核心
+本项目采用先进的面部表情识别算法（如基于ConvNeXt架构的模型），对用户图像进行情绪分类。在模型识别出情绪后，系统会调用一个频率匹配库，从中选出适合当前情绪状态的颂钵音频进行播放。整个过程无需用户干预，界面简洁，响应快速，力求打造一种零门槛的情绪疗愈体验。</p>
+      </div>
+      <img src="./image/image4.jpg" alt="装饰图片">
+    </div>
+
+    <div class="column">
+      <img src="./image/image5.jpg" alt="装饰图片">
+      <p> 为什么是颂钵？<nav></nav>
+颂钵是一种历史悠久的声音疗愈工具，其发出的低频共振音波已被多项研究证实具有降低焦虑、改善睡眠、放松神经系统的作用。相比传统心理干预手段，颂钵的使用门槛低，非药物无副作用，尤其适合现代人碎片化时间中的情绪调节。<nav></nav>
+
+通过科技手段自动匹配最适合的钵音，我们将原本静态、依赖经验的疗愈方式升级为动态、个性化、智能响应的新形态。
+<nav></nav> ---- <nav></nav>
+ 项目的意义与愿景<nav></nav>
+我们相信，情绪也应该被看见、被理解、被回应。
+当技术不再只是冰冷的计算工具，它也可以成为疗愈的桥梁。<nav></nav>
+本项目不仅是一次技术实现，更是一次人文关怀在人工智能中的落地尝试。
+<nav></nav>
+未来，我们希望将这一系统拓展至教育、心理健康、企业减压、康复训练等多个场景中，构建一个真正“懂你”的声音疗愈空间。
+未选择文件</p>
+      <video controls>
+        <source src="./video/video1.mp4" type="video/mp4" />
+        您的浏览器不支持视频播放。
+      </video>
+    </div>
+  </div>
+
+  <!-- 返回首页按钮 -->
+  <div class="footer">
+    <a href="index.html">返回首页</a>
+  </div>
+</body>
+</html>
